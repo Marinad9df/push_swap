@@ -4,8 +4,7 @@ SRC_DIR = srcs/
 INC_DIR = includes/
 
 # SOURCE FILES
-SRCS_FILES = parse_utils.c parse_numbers.c parse_arguments.c \
-             # Añade aquí otros archivos fuente cuando los tengas
+SRCS_FILES = parse_utils.c parse_numbers.c parse_arguments.c instructions.c push_swap.c sort.C stack_utils.c
 
 SRC = $(addprefix $(SRC_DIR), $(SRCS_FILES))
 OBJS = $(addprefix $(OBJS_DIR), $(SRCS_FILES:%.c=%.o))
@@ -16,7 +15,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I $(INC_DIR)
 RM = rm -rf
 
-# LIBFT (si lo necesitas)
+# LIBFT
 LIBFT_DIR = ./libft/
 LIBFT = libft.a
 LIBFT_AR = $(addprefix $(LIBFT_DIR), $(LIBFT))
