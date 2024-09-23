@@ -4,7 +4,7 @@ SRC_DIR = srcs/
 INC_DIR = includes/
 
 # SOURCE FILES
-SRCS_FILES = parse_utils.c parse_numbers.c parse_arguments.c instructions.c push_swap.c sort.C stack_utils.c
+SRCS_FILES = parse_utils.c parse_numbers.c parse_arguments.c instructions.c push_swap.c sort.c sort_utils.c stack_utils.c push_swap_utils.c
 
 SRC = $(addprefix $(SRC_DIR), $(SRCS_FILES))
 OBJS = $(addprefix $(OBJS_DIR), $(SRCS_FILES:%.c=%.o))
